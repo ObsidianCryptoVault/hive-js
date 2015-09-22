@@ -42,16 +42,4 @@ window.initHiveApp = function() {
     auth.hide()
     frame.show()
   })
-
-  function updateExchangeRates(){
-    var tickerUpdateInterval = 1000 * 60 * 2
-    var ticker = new Ticker(getNetwork())
-
-    ticker.getExchangeRates(function(err, rates){
-      if(rates) emitter.emit('ticker', rates)
-      window.setTimeout(updateExchangeRates, tickerUpdateInterval)
-    })
-  }
-
-  updateExchangeRates()
 }

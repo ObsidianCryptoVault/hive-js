@@ -1,5 +1,4 @@
 {
-    "Back to hivewallet.com": "Powrót do hivewallet.com",
     "Create new wallet": "Utwórz nowy portfel",
     "Open existing wallet": "Otwórz istniejący portfel",
     "We are about to generate your very own passphrase": "Wygenerujemy teraz hasło dla twojego nowego portfela",
@@ -39,7 +38,7 @@
     "What does this mean?": "Co to znaczy?",
     "It seems like you are trying to empty your wallet. Taking transaction fee into account, we estimated that the max amount you can send is. We have amended the value in the amount field for you": "Wygląda na to, że chcesz opróżnić swój portfel. Biorąc pod uwagę opłatę transakcyjną, maksymalna kwota, jaką możesz przesłać to %(sendableBalance)s. Wartość w polu Kwota została automatycznie poprawiona.",
     "You do not have enough funds in your wallet": "Nie posiadasz wystarczających środków w portfelu",
-    "A name is required to set your profile on Hive": "Aby utworzyć profil Hive, wymagana jest nazwa",
+    "A name is required to set your profile on Obsidiancvt": "Aby utworzyć profil Obsidiancvt, wymagana jest nazwa",
     "Uh Oh...": "Och..",
     "Whoops!": "Ups!",
     "Just saying...": "Drobna uwaga...",
@@ -62,7 +61,7 @@
     "Receive": "Odbierz",
     "History": "Historia",
     "Tokens": "Tokeny",
-    "Waggle lets you broadcast your wallet address to other nearby Hive users by comparing GPS data. This data is deleted once you turn Waggle off.": "Waggle używa twojej lokalizacji GPS w celu udostępnienia adresu portfela innym użytkownikom Hive w twojej okolicy. Dane te są usuwane z serwera po wybraniu opcji \"Wyłącz Waggle\".",
+    "Waggle lets you broadcast your wallet address to other nearby Obsidiancvt users by comparing GPS data. This data is deleted once you turn Waggle off.": "Waggle używa twojej lokalizacji GPS w celu udostępnienia adresu portfela innym użytkownikom Obsidiancvt w twojej okolicy. Dane te są usuwane z serwera po wybraniu opcji \"Wyłącz Waggle\".",
     "Having problems?": "Potrzebujesz pomocy?",
     "Description": "Opis",
     "Your email address": "Twój adres e-mail",
@@ -89,10 +88,10 @@
     "Amount": "Suma",
     "Exchange rate unavailable for the selected currency": "Kurs wymiany jest niedostępny dla wybranej waluty",
     "Confirm": "Potwierdź",
-    "No Hive users found nearby": "Nie wykryto żadnych użytkowników Hive w twojej okolicy",
+    "No Obsidiancvt users found nearby": "Nie wykryto żadnych użytkowników Obsidiancvt w twojej okolicy",
     "Search Again": "Wyszukaj ponownie",
     "Searching...": "Wyszukiwanie...",
-    "Searching your area for other Hive Web users": "Wyszukiwanie innych użytkowników Hive w twojej okolicy",
+    "Searching your area for other Obsidiancvt Web users": "Wyszukiwanie innych użytkowników Obsidiancvt w twojej okolicy",
     "Confirm transaction": "Potwierdź transakcję",
     "transaction fee": "opłata transakcyjna",
     "Cancel": "Anuluj",
@@ -103,6 +102,6 @@
     "Transaction Failed": "Transakcja nie mogła zostać wykonana",
     "Please make sure you are connected to the internet.": "Upewnij się, że masz połączenie z Internetem.",
     "Please describe what happened above. Below are network error logs that could help us identify your issue.": "Opisz powyżej kreski, co się stało. Poniżej dołączone są logi, które mogą nam pomóc rozwiązać Twój problem.",
-    "Sorry, Hive Wallet did not load.": "Niestety, Hive nie może być załadowany.",
-    "Try updating your browser, or switching out of private browsing mode. If all else fails, download Chrome for your device.": "Spróbuj zaktualizować swoją przeglądarkę lub wyłączyć trybu incognito. Jeśli mimo wszystko nie możesz uruchomić Hive, spróbuj zainstalować przeglądarkę Chrome."
+    "Sorry, Obsidiancvt Wallet did not load.": "Niestety, Obsidiancvt nie może być załadowany.",
+    "Try updating your browser, or switching out of private browsing mode. If all else fails, download Chrome for your device.": "Spróbuj zaktualizować swoją przeglądarkę lub wyłączyć trybu incognito. Jeśli mimo wszystko nie możesz uruchomić Obsidiancvt, spróbuj zainstalować przeglądarkę Chrome."
 }

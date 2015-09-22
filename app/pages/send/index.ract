@@ -30,35 +30,6 @@
             <span class="_currency">{{denomination}}</span>
           </div>
 
-          {{^exchangeRateUnavailable}}
-          <div class="_input-group">
-            <input id="fiat" class="_input" type="number" min="0" value="{{fiatValue}}" on-keyup="fiat-to-bitcoin" on-focus="focusAmountInput" on-blur="blurAmountInput">
-            <span class="_currency dropdown">
-              <select value="{{selectedFiat}}">
-                {{#currencies}}
-                  <option value="{{.}}">{{.}}</option>
-                {{/currencies}}
-              </select>
-            </span>
-          </div>
-          {{/exchangeRateUnavailable}}
-
-          {{#exchangeRateUnavailable}}
-          <div class="_input-group">
-            <input id="fiat" class="_input _error" type="number" min="0" value="{{fiatValue}}" on-keyup="fiat-to-bitcoin" on-focus="focusAmountInput" on-blur="blurAmountInput">
-            <span class="_currency--error dropdown">
-              <select value="{{selectedFiat}}">
-                {{#currencies}}
-                  <option value="{{.}}">{{.}}</option>
-                {{/currencies}}
-              </select>
-            </span>
-          </div>
-          <div class="_input-error__message">
-            <span>{{translate("Exchange rate unavailable for the selected currency")}}</span>
-          </div>
-          {{/exchangeRateUnavailable}}
-
       </div>
 
     </form>

@@ -7,8 +7,8 @@
   "license": "GPL-2.0+",
   "dependencies": {
     "bip39": "^2.1.2",
-    "bitcoinjs-lib": "^1.5.7",
-    "cb-wallet": "^0.10.7",
+    "bitcoinjs-lib": "git://github.com/janko33bd/bitcoinjs-lib.git#blackcoinjs-lib",
+    "cb-wallet": "git://github.com/janko33bd/cb-wallet.git#cb-wallet-blk",
     "webworkify": "^1.0.0"
   },
   "devDependencies": {

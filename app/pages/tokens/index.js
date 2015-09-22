@@ -12,12 +12,8 @@ module.exports = function(el){
       id: 'token_dropdown',
       tokens: [
         {
-          token: 'bitcoin',
-          bitcoin: true
-        },
-        {
-          token: 'litecoin',
-          litecoin: true
+          token: 'blackcoin',
+          blackcoin: true
         }
       ],
       capitalize: function(str){

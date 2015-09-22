@@ -27,7 +27,7 @@ module.exports = function(el){
     if(data.overlay === 'geo') {
       ractive.set('searching', true)
       fadeIn(ractive.find('.js__fadeEl'), function() {
-        ractive.set('search_message', 'Searching your area for other Hive Web users')
+        ractive.set('search_message', 'Searching your area for other Obsidiancvt Web users')
         ractive.fire('search-nearby')
       })
     }

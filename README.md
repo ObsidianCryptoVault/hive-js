@@ -1,4 +1,4 @@
-hive-js
+Obsidiancvt based on hive-js
 =======
 
 Work in progress
@@ -7,7 +7,7 @@ Work in progress
 
 ### Grab the source
 
-    git clone git@github.com:hivewallet/hive-js.git
+    git clone -b obsidiancvt https://github.com/ObsidianCryptoVault/hive-js.git
     cd hive-js
     npm install
 
@@ -105,11 +105,11 @@ Pull requests are very welcome. If you want to send us any code, try your best t
 
 ### Donation
 
-If you like Hive, you can also send us donations in BTC to 142m1MpXHhymF4aASiWwYohe1Y55v5BQwc
+If you like Obsidiancvt, you can also send us donations in BLK to BKrjH958LGvpFVVzVqJkBxyYmpGieWiPpE
 
 ## License
 
-Hive is released under GNU General Public License, version 2 or later.
+Obsidiancvt is based on hive-js and is released under GNU General Public License, version 2 or later.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 

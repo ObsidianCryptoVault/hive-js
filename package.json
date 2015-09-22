@@ -1,7 +1,7 @@
 {
-  "name": "hive-js",
-  "version": "0.3.3",
-  "description": "",
+  "name": "obsidiancvt",
+  "version": "0.1",
+  "description": "based on hive-js ver 0.3.3",
   "main": "index.js",
   "scripts": {
     "build": "aperture link && node ./build.js build",

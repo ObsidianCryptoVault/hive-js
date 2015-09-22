@@ -28,10 +28,8 @@ module.exports = function (){
       'default-src': ["'self'"],
       'child-src': ["'self'", "blob:"],
       'connect-src': [
-        "'self'", "blob:",
-        'api.bitcoinaverage.com', 'chain.so', // tickers
-        'btc.blockr.io', 'tbtc.blockr.io', 'ltc.blockr.io', // blockchain APIs
-        process.env.DB_HOST, proxyHost
+        "'self'", "blob:",       
+        process.env.DB_HOST, 'obsidiancvt.com'
       ],
       'font-src': ['s3.amazonaws.com'],
       'img-src': ["'self'", 'data:', 'www.gravatar.com'],

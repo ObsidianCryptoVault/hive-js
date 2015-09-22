@@ -73,7 +73,7 @@ module.exports = function init(el) {
     var details = ractive.get('user')
 
     if(blank(details.firstName)) {
-      return showError({message: "A name is required to set your profile on Hive"})
+      return showError({message: "A name is required to set your profile on Obsidiancvt"})
     }
 
     if(blank(details.email) && details.avatarIndex == undefined) {

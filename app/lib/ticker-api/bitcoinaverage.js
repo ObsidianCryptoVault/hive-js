@@ -13,7 +13,8 @@ var ExchangeRateFunctions = {
 function BitcoinAverage(network){
   BitcoinAverage.prototype.getExchangeRates = ExchangeRateFunctions[network]
   if(!BitcoinAverage.prototype.getExchangeRates) {
-    throw new Error(network + " price ticker is not supported")
+    console.info(network + " price ticker is not supported")
+	BitcoinAverage.prototype.getExchangeRates = ExchangeRateFunctions[network]
   }
 }
 BitcoinAverage.apiRoot = "https://api.bitcoinaverage.com/ticker/"

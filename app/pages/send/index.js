@@ -25,7 +25,6 @@ module.exports = function(el){
   emitter.on('clear-send-form', function(){
     ractive.set('to', '')
     ractive.set('value', '')
-    ractive.set('fiatValue', '')
   })
 
   emitter.on('prefill-wallet', function(address) {
@@ -75,40 +74,7 @@ module.exports = function(el){
     db.get(function(err, doc){
       if(err) return console.error(err);
 
-      ractive.set('selectedFiat', doc.systemInfo.preferredCurrency)
     })
-  })
-
-  emitter.on('ticker', function(rates){
-    ractive.set('exchangeRates', rates)
-  })
-
-  ractive.observe('selectedFiat', setPreferredCurrency)
-
-  ractive.on('fiat-to-bitcoin', function(){
-    var fiat = ractive.nodes.fiat.value
-    if(fiat == undefined || fiat === '') return;
-
-    var exchangeRate = getExchangeRate()
-    if(!exchangeRate) return;
-
-    var bitcoin = toFixedFloor(new Big(fiat).div(exchangeRate), 8)
-
-    ractive.set('value', bitcoin)
-  })
-
-  ractive.on('bitcoin-to-fiat', function(){
-    var bitcoin = ractive.nodes.bitcoin.value
-    if(bitcoin == undefined || bitcoin === '') return;
-
-
-    var exchangeRate = getExchangeRate()
-    if(!exchangeRate) return;
-
-    var val = new Big(bitcoin).times(exchangeRate)
-    var fiat = toFixedFloor(val, 2)
-
-    ractive.set('fiatValue', fiat)
   })
 
   ractive.observe('to', function() {
@@ -135,8 +101,7 @@ module.exports = function(el){
   })
 
   function getExchangeRate(){
-    var exchangeRate = ractive.get('exchangeRates')[ractive.get('selectedFiat')]
-    ractive.set("exchangeRateUnavailable", exchangeRate == undefined)
+    ractive.set("exchangeRateUnavailable", true)
     return exchangeRate
   }
 
@@ -145,9 +110,6 @@ module.exports = function(el){
 
     db.set('systemInfo', {preferredCurrency: currency}, function(err, response){
       if(err) return console.error(response);
-
-      emitter.emit('preferred-currency-changed', currency)
-      ractive.fire('bitcoin-to-fiat')
     })
   }
 

@@ -31,19 +31,11 @@ module.exports =  {
     animateIn(elems['block4'], 900)
     animateIn(elems['block5'], 1100)
   },
-  out: function(container, key) {
-    Velocity.animate(key, {
-      rotateZ: '30deg',
-    }, {
-      easing: "linear",
-      duration: 100,
-      complete: function() {
-        setTimeout(function(){
+  out: function(container) {
+    setTimeout(function(){
           fadeOut(container, function() {
             window.initHiveApp()
           })
         },200)
-      }
-    })
   }
 }

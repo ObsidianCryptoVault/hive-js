@@ -1,31 +1,9 @@
 <div class="header">
 
-  {{#menuOpen}}
-    <div class="toggle_overlay" on-click="toggle"></div>
-  {{/menuOpen}}
-
-  <div id="menu_btn" class="header__toggle {{#menuOpen}}is_open{{/menuOpen}}" on-click="toggle">
-    <span class="_icon">
-      {{^menuOpen}}
-        {{>svg_settings}}
-      {{/menuOpen}}
-      {{#menuOpen}}
-        {{>svg_close}}
-      {{/menuOpen}}
-    </span>
-  </div>
-
   {{^showFiat}}
-    <div class="header__balance" on-click="toggle-currencies">
+    <div class="header__balance">
       <span class="_amount">{{cropBalance(satoshiToBtc(bitcoinBalance))}}</span>
       <span class="_currency">{{denomination}}</span>
-    </div>
-  {{/showFiat}}
-
-  {{#showFiat}}
-    <div class="header__balance" on-click="toggle-currencies">
-      <span class="_amount">{{bitcoinToFiat(bitcoinBalance, exchangeRates[fiatCurrency])}}</span>
-      <span class="_currency">{{fiatCurrency}}</span>
     </div>
   {{/showFiat}}
 

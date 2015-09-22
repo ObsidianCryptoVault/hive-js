@@ -43,9 +43,10 @@ Modernizr.on('indexeddb', function(hasIndexedDB){
     },
     complete: function() {
       if(goodToGo) {
-        setTimeout(function(){
-          fadeOut(containerEl, keyEl)
+setTimeout(function(){
+          fadeOut(containerEl)
         }, 1000)
+
       }
     }
   })
